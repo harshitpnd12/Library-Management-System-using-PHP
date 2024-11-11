@@ -1,0 +1,32 @@
+.user-icon {
+  width: 30px;
+  border-radius: 100%;
+}
+
+.sidebar-nav {
+  width: 270px !important;
+}
+
+.sidebar-link .right-icon {
+  transition: all 0.2s;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+  .offcanvas-backdrop {
+    display: none !important;
+  }
+
+  .sidebar-nav {
+    transform: none !important;
+    visibility: visible !important;
+    top: 56px !important;
+  }
+
+  main {
+    margin-left: 270px;
+  }
+}
